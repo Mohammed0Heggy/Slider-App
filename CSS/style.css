@@ -1,0 +1,46 @@
+.reviews {
+  width: 40%;
+  margin: auto;
+  background-color: beige;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  color: rgb(177, 125, 49);
+
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(223, 160, 82);
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 45%;
+}
+
+.person p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btns button {
+  height: 50px;
+  width: 50px;
+}
+
+.btns {
+  background-color: rgb(232, 231, 180);
+  height: 50px;
+  display: flex;
+  margin: auto;
+  margin-bottom: -20px;
+  justify-content: space-between;
+  align-items: center;
+}
