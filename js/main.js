@@ -45,3 +45,35 @@ prev.addEventListener("click", () => {
   if (current < 0) { current = reviewsData.length - 1 }
   update()
 })
+
+let addNewBtn = document.getElementById("addNewBtn");
+let closeFormBtn = document.getElementById("closeFormBtn");
+let overlay = document.querySelector(".overlay");
+
+addNewBtn.addEventListener("click", () => {
+  overlay.style.display = "block"
+})
+
+closeFormBtn.addEventListener("click", () => {
+  overlay.style.display = "none"
+})
+
+let reviewForm = document.querySelector(".addReview form");
+reviewForm.addEventListener("submit", e => e.preventDefault())
+
+let sendDataBtn = document.getElementById("sendDataBtn");
+let formName = document.getElementById("name");
+let formMessage = document.getElementById("message");
+let formImg = document.getElementById("image");
+
+sendDataBtn.addEventListener("click", () => {
+  reviewsData.push({
+    id: reviewsData.length + 1,
+    name: formName.value,
+    review: formMessage.value,
+    imgURL: "images/" + formImg.value,
+  })
+  overlay.style.display = "none"
+  console.log(reviewsData);
+})
+

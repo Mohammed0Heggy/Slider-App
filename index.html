@@ -19,6 +19,20 @@
       <button class="prev">&#60;</button>
       <button class="next">&#62;</button>
     </div>
+    <button id="addNewBtn">Add Review</button>
+  </div>
+  <div class="overlay">
+    <div class="addReview">
+      <form action="">
+        <input required type="text" id="name" placeholder="Enter Name">
+        <input required type="text" id="image" placeholder="Enter imageURL">
+        <textarea required id="message" placeholder="Enter Review"></textarea>
+        <div>
+          <input type="submit" id="sendDataBtn" value="add data">
+          <input type="button" id="closeFormBtn" value="Cancel">
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 <script src="./js/main.js"></script>
